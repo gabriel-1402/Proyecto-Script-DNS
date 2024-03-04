@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: yes
+  tasks: 
+    - name: PARAR APACHE
+      service: name=bind9 state=started

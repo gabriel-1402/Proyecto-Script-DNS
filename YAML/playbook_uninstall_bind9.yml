@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: DESINSTALAR BIND9
+      apt: name=bind9 update_cache=yes state=absent

@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: INSTALAR BIND9
+      apt: 
+        name: "bind9" 
+        update_cache: yes 
+        state: latest
+
+
+
